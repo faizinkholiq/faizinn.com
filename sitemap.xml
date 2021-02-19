@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/belajar/</loc>
+    <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/belajar/javascript/second/</loc>
+    <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/belajar/php/kenalan/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/info/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/belajar/javascript/first/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/info/kenalan/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>

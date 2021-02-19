@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Devtover</title>
+<style>
+    body {
+        margin: 0px;
+        font-family: 'Sans-Serif';
+    }
+
+    .nav {
+        height: 55px;
+        width: 100%;
+        background-color: #ffffff;
+         
+        position: relative;
+        box-shadow: 1px 0 6px 2px #aaa;
+    }
+
+    .nav .nav-container{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .nav .nav-header {
+        display: inline;
+    }
+
+    .nav .nav-header .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #000;
+        font-weight: bold;
+        padding: 15px;
+    }
+
+    .nav .nav-links {
+        float: right;
+        font-size: 14px;
+    }
+
+    .nav .nav-links > a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        padding: 18px 10px 12px;
+        height: 25px;
+        transition: color 0.2s;
+    }
+
+    .nav .nav-links > a:hover {
+        color: #47c4fa;
+    }
+
+</style><body><style>
+    .toggleWrapper {
+        overflow: hidden;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 999999;
+    }
+
+    .toggleWrapper input {
+        position: absolute;
+        left: -99em;
+    }
+
+    .toggle {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        width: 90px;
+        height: 50px;
+        background-color: #83d8ff;
+        border-radius: 84px;
+        transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    .toggle__handler {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 3px;
+        left: 3px;
+        width: 44px;
+        height: 44px;
+        background-color: #ffcf96;
+        border-radius: 50px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+        transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform: rotate(-45deg);
+    }
+
+    .toggle__handler .crater {
+        position: absolute;
+        background-color: #e8cda5;
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+        border-radius: 100%;
+    }
+
+    .toggle__handler .crater--1 {
+        top: 18px;
+        left: 10px;
+        width: 4px;
+        height: 4px;
+    }
+
+    .toggle__handler .crater--2 {
+        top: 28px;
+        left: 22px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .toggle__handler .crater--3 {
+        top: 10px;
+        left: 25px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .star {
+        position: absolute;
+        background-color: #fff;
+        transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        border-radius: 50%;
+    }
+
+    .star--1 {
+        top: 10px;
+        left: 35px;
+        z-index: 0;
+        width: 30px;
+        height: 3px;
+    }
+
+    .star--2 {
+        top: 18px;
+        left: 28px;
+        z-index: 1;
+        width: 30px;
+        height: 3px;
+    }
+
+    .star--3 {
+        top: 27px;
+        left: 40px;
+        z-index: 0;
+        width: 30px;
+        height: 3px;
+    }
+
+    .star--4,
+    .star--5,
+    .star--6 {
+        opacity: 0;
+        transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    .star--4 {
+        top: 16px;
+        left: 11px;
+        z-index: 0;
+        width: 2px;
+        height: 2px;
+        transform: translate3d(3px, 0, 0);
+    }
+
+    .star--5 {
+        top: 32px;
+        left: 17px;
+        z-index: 0;
+        width: 3px;
+        height: 3px;
+        transform: translate3d(3px, 0, 0);
+    }
+
+    .star--6 {
+        top: 36px;
+        left: 28px;
+        z-index: 0;
+        width: 2px;
+        height: 2px;
+        transform: translate3d(3px, 0, 0);
+    }
+
+    input:checked+.toggle {
+        background-color: #749dd6;
+    }
+
+    input:checked+.toggle:before {
+        color: #749ed7;
+    }
+
+    input:checked+.toggle:after {
+        color: #fff;
+    }
+
+    input:checked+.toggle .toggle__handler {
+        background-color: #ffe5b5;
+        transform: translate3d(40px, 0, 0) rotate(0);
+    }
+
+    input:checked+.toggle .toggle__handler .crater {
+        opacity: 1;
+    }
+
+    input:checked+.toggle .star--1 {
+        width: 2px;
+        height: 2px;
+    }
+
+    input:checked+.toggle .star--2 {
+        width: 4px;
+        height: 4px;
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    input:checked+.toggle .star--3 {
+        width: 2px;
+        height: 2px;
+        transform: translate3d(-7px, 0, 0);
+    }
+
+    input:checked+.toggle .star--4,
+    input:checked+.toggle .star--5,
+    input:checked+.toggle .star--6 {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    input:checked+.toggle .star--4 {
+        transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    input:checked+.toggle .star--5 {
+        transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    input:checked+.toggle .star--6 {
+        transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+</style>
+<div class="toggleWrapper" title="Dark Mode">
+    <input type="checkbox" class="dn" id="dn" />
+    <label for="dn" class="toggle">
+        <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+        </span>
+        <span class="star star--1"></span>
+        <span class="star star--2"></span>
+        <span class="star star--3"></span>
+        <span class="star star--4"></span>
+        <span class="star star--5"></span>
+        <span class="star star--6"></span>
+    </label>
+</div>
+<div class="nav">
+    <div class="nav-container">
+        <div class="nav-header">
+            <div class="nav-title">
+                
+                <img src="http://example.org/images/logo.png" style="height: 23px;">
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="//github.io/jo_geek" target="_blank">Belajar</a>
+            <a href="//github.io/jo_geek" target="_blank">Info</a>
+            <a href="//github.io/jo_geek" target="_blank">Random Post</a>
+        </div>
+    </div>
+</div>
+<style>
+    div.main{
+        width: 100%;
+         
+        min-height: 85.8vh;
+        position: relative;
+    }
+    
+    div.list-category{
+        display: flex;
+        flex-wrap: wrap;
+        width:60%;
+        margin: 0 auto;
+        height: auto;
+    }
+    div.list-category div.card-category{
+        width: 23%;
+        height: 200px;
+         
+        display: inline-block;
+        margin: 1% 0 1% 2%;
+         
+        text-align: center;
+        transition: transform .2s;  
+    }
+
+    div.list-category div.card-category:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .image-category img{
+        height: 80px;
+    }
+    .title-category{
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    div.container{
+        margin: 0 2%;
+         
+    }
+
+    .wrapper {
+        height: 20vh;
+         
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .typing-demo {
+        width: 32ch;
+        animation: typing 3s steps(32), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+            
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+    
+</style>
+<div class="main">
+    <div class="container">
+        
+        <div class="wrapper">
+            <div class="typing-demo">
+                Belajar kemarin, Share hari ini.
+            </div>
+        </div>
+        <div class="single-section" style="text-align: center; margin: 0 0 100px;">
+            <center><h2>Belajar HTML</h2></center>
+        </div>
+    </div>
+</div>
+ <style>
+     footer.site-footer{
+        width: 100%;
+         
+         
+        position: absolute;
+     }
+
+     footer.site-footer div.container{
+        margin: 0 0 20px;
+     }
+
+     .list-social{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     .list-social > img{
+         margin: 0 7px;
+         height: 30px;
+         width: 25px;
+     }
+ </style>
+ 
+  <footer class="site-footer">
+    <div class="container">
+        <div class="list-social" style="width: 100%;">
+            <img src="http://example.org/images/social/facebook.svg" />
+            <img src="http://example.org/images/social/twitter.svg" />
+            <img src="http://example.org/images/social/telegram.svg" />
+            <img src="http://example.org/images/social/instagram.svg" />
+            <img src="http://example.org/images/social/youtube.svg" />
+            <img src="http://example.org/images/social/github.svg" />
+        </div><br>
+        <div class="foot" style="text-align: center;">
+            &copy;2020 <b>Devtover</b> | Made with ❤ in Banjarnegara
+        </div>
+    </div>
+  </footer>
+
+
+  </body>
+</html>
