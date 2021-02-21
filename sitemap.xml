@@ -13,8 +13,23 @@
   </url>
   
   <url>
+    <loc>https://faizinn.com/tags/javascript/</loc>
+    <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://faizinn.com/belajar/javascript/second/</loc>
     <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/tags/</loc>
+    <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/tags/angular/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
   <url>
@@ -38,11 +53,22 @@
   </url>
   
   <url>
-    <loc>https://faizinn.com/categories/</loc>
+    <loc>https://faizinn.com/tags/php/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://faizinn.com/tags/</loc>
+    <loc>https://faizinn.com/tags/react/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/tags/vue/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/categories/</loc>
   </url>
   
 </urlset>
