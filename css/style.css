@@ -3,8 +3,18 @@
   src: url(../fonts/Varela_Round/VarelaRound-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto-light";
+  src: url(../fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
 * {
-  font-family: "Varela";
+  font-family: "Roboto";
 }
 
 body {
@@ -130,7 +140,7 @@ body {
 
 /* TYPING EFFECT */
 .typing-demo {
-  width: 23ch;
+  width: 24ch;
   animation: typing 2s steps(32), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
