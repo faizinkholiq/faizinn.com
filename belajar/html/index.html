@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HTML</title>
+<meta name="description" content="Belajar menulis hehe" />
+<link rel="icon" href="/images/favicon.png" type="image/gif">
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/icons/css/all.css">
+<body><div class="toggleWrapper" title="Dark Mode">
+  <input type="checkbox" class="dn" id="dn" />
+  <label for="dn" class="toggle">
+    <span class="toggle__handler">
+      <span class="crater crater--1"></span>
+      <span class="crater crater--2"></span>
+      <span class="crater crater--3"></span>
+    </span>
+    <span class="star star--1"></span>
+    <span class="star star--2"></span>
+    <span class="star star--3"></span>
+    <span class="star star--4"></span>
+    <span class="star star--5"></span>
+    <span class="star star--6"></span>
+  </label>
+</div>
+
+<div class="navbar">
+  <div class="nav-header">
+    
+    <a href="https://faizinn.com/">
+      <img src="https://faizinn.com/images/FAIZINN.COM.png" style="height: 29px;">
+    </a>
+  </div>
+  <div class="nav-links">
+    <div class="dropdown-menu">
+      <a
+        href="javascript:;"
+        class="dropdown-trigger"
+        onclick="dropdownMenu('belajar_dropdown')"
+        >Belajar</a
+      >
+      <div id="belajar_dropdown" class="dropdown-content">
+        
+        <a
+          href="https://faizinn.com/ belajar/ javascript"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/javascript.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          javascript
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ codeigniter"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/codeigniter.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          codeigniter
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ flutter"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/flutter.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          flutter
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ html"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/html.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          html
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ mysql"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/mysql.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          mysql
+        </a>
+        
+        <a
+          href="https://faizinn.com/belajar"
+          class="dropdown-item"
+          style="margin-top: 5px;"
+          >More ➜</a
+        >
+      </div>
+    </div>
+    <a href="#!">Info</a>
+    <a href="#!">Random Post</a>
+  </div>
+</div>
+
+<style>
+  .double-section {
+    margin-top: 3rem;
+    min-height: 50vh;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+
+  .double-section > .main {
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #d6cece;
+    margin-right: 1.5rem;
+  }
+
+  .double-section > .side {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #d6cece;
+    height: fit-content;
+  }
+</style>
+<div class="main">
+  <div class="content">
+    <div class="double-section">
+      <div class="main">
+        <h1>Belajar HTML</h1>
+        <p>dibawah ini beberapa post tentang HTML, Semoga suka :)</p>
+        <ul>
+          
+          
+        </ul>
+      </div>
+      <div class="side">
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/codeigniter')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/codeigniter.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            codeigniter
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/flutter')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/flutter.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            flutter
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/html')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/html.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            html
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/javascript')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/javascript.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            javascript
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/mysql')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/mysql.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            mysql
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/php')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/php.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            php
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+        <div
+          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
+          onclick="goTo('https:\/\/faizinn.com\/belajar/vue')"
+        >
+          <div style="width: 20%; text-align: center;">
+            <img src="https://faizinn.com/images/vue.png"
+            style="width:1.5rem;"/>
+          </div>
+          <div style="flex: 1; text-transform: capitalize;">
+            vue
+          </div>
+          <i class="fa fa-chevron-right" style="color:#aaa;"></i>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="list-social">
+    <img src="https://faizinn.com/images/social/facebook.svg" /> <img
+    src="https://faizinn.com/images/social/twitter.svg" /> <img
+    src="https://faizinn.com/images/social/telegram.svg" /> <img
+    src="https://faizinn.com/images/social/instagram.svg" /> <img
+    src="https://faizinn.com/images/social/youtube.svg" /> <img
+    src="https://faizinn.com/images/social/github.svg" />
+  </div>
+  <br />
+  <div class="info">
+    &copy;2020 <b>Devtover</b> | Made with ❤ in Banjarnegara
+  </div>
+</footer>
+<script type="text/javascript" src="/js/utils.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
 <meta name="description" content="Belajar menulis hehe" />
 <link rel="icon" href="/images/favicon.png" type="image/gif">
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/icons/css/all.css">
 <body><div class="toggleWrapper" title="Dark Mode">
   <input type="checkbox" class="dn" id="dn" />
   <label for="dn" class="toggle">
@@ -25,24 +26,80 @@
 <div class="navbar">
   <div class="nav-header">
     
-    <img src="https://faizinn.com/images/FAIZINN.COM.png" style="height: 29px;">
+    <a href="https://faizinn.com/">
+      <img src="https://faizinn.com/images/FAIZINN.COM.png" style="height: 29px;">
+    </a>
   </div>
   <div class="nav-links">
     <div class="dropdown-menu">
       <a
-        href="#!"
+        href="javascript:;"
         class="dropdown-trigger"
         onclick="dropdownMenu('belajar_dropdown')"
         >Belajar</a
       >
       <div id="belajar_dropdown" class="dropdown-content">
-        <a class="dropdown-item" href="#home">Home</a>
-        <a class="dropdown-item" href="#about">About</a>
-        <a class="dropdown-item" href="#contact">More ➜</a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ javascript"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/javascript.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          javascript
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ codeigniter"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/codeigniter.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          codeigniter
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ flutter"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/flutter.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          flutter
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ html"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/html.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          html
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ mysql"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/mysql.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          mysql
+        </a>
+        
+        <a
+          href="https://faizinn.com/belajar"
+          class="dropdown-item"
+          style="margin-top: 5px;"
+          >More ➜</a
+        >
       </div>
     </div>
-    <a href="//github.io/jo_geek" target="_blank">Info</a>
-    <a href="//github.io/jo_geek" target="_blank">Random Post</a>
+    <a href="#!">Info</a>
+    <a href="#!">Random Post</a>
   </div>
 </div>
 
@@ -56,49 +113,49 @@
     <center><h2>Kamu mau belajar apa?</h2></center>
     <div class="list-category" style="margin-top: 50px">
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;codeigniter&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/codeigniter.png" />
         </div>
         <div class="title-category">codeigniter</div>
       </div>
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;flutter&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/flutter.png" />
         </div>
         <div class="title-category">flutter</div>
       </div>
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;html&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/html.png" />
         </div>
         <div class="title-category">html</div>
       </div>
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;javascript&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/javascript.png" />
         </div>
         <div class="title-category">javascript</div>
       </div>
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;mysql&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/mysql.png" />
         </div>
         <div class="title-category">mysql</div>
       </div>
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;php&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/php.png" />
         </div>
         <div class="title-category">php</div>
       </div>
       
-      <div class="card-category">
+      <div class="card-category" onclick="goTo(&#34;vue&#34;)">
         <div class="image-category">
           <img src="https://faizinn.com/images/vue.png" />
         </div>

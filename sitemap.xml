@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://faizinn.com/belajar/javascript/</loc>
+    <lastmod>2021-02-08T00:42:13+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://faizinn.com/tags/javascript/</loc>
     <lastmod>2021-02-08T00:42:13+07:00</lastmod>
   </url>
@@ -28,12 +33,22 @@
   </url>
   
   <url>
-    <loc>https://faizinn.com/tags/angular/</loc>
+    <loc>https://faizinn.com/belajar/php/kenalan/</loc>
     <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://faizinn.com/belajar/php/kenalan/</loc>
+    <loc>https://faizinn.com/tags/codeigniter/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/tags/flutter/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/tags/html/</loc>
     <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
@@ -48,17 +63,22 @@
   </url>
   
   <url>
+    <loc>https://faizinn.com/tags/mysql/</loc>
+    <lastmod>2020-08-24T18:04:02+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://faizinn.com/info/kenalan/</loc>
     <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://faizinn.com/tags/php/</loc>
+    <loc>https://faizinn.com/belajar/php/</loc>
     <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://faizinn.com/tags/react/</loc>
+    <loc>https://faizinn.com/tags/php/</loc>
     <lastmod>2020-08-24T18:04:02+07:00</lastmod>
   </url>
   
@@ -69,6 +89,26 @@
   
   <url>
     <loc>https://faizinn.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/belajar/codeigniter/</loc>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/belajar/flutter/</loc>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/belajar/html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/belajar/mysql/</loc>
+  </url>
+  
+  <url>
+    <loc>https://faizinn.com/belajar/vue/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on faizinn.com</title>
+    <link>https://faizinn.com/belajar/javascript/</link>
+    <description>Recent content in JavaScript on faizinn.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Feb 2021 00:42:13 +0700</lastBuildDate>
+    
+	<atom:link href="https://faizinn.com/belajar/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second</title>
+      <link>https://faizinn.com/belajar/javascript/second/</link>
+      <pubDate>Mon, 08 Feb 2021 00:42:13 +0700</pubDate>
+      
+      <guid>https://faizinn.com/belajar/javascript/second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://faizinn.com/belajar/javascript/first/</link>
+      <pubDate>Mon, 24 Aug 2020 18:04:02 +0700</pubDate>
+      
+      <guid>https://faizinn.com/belajar/javascript/first/</guid>
+      <description>yoiddd</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,6 +5,7 @@
 <meta name="description" content="Belajar menulis hehe" />
 <link rel="icon" href="/images/favicon.png" type="image/gif">
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/icons/css/all.css">
 <body><div class="toggleWrapper" title="Dark Mode">
   <input type="checkbox" class="dn" id="dn" />
   <label for="dn" class="toggle">
@@ -25,105 +26,177 @@
 <div class="navbar">
   <div class="nav-header">
     
-    <img src="https://faizinn.com/images/FAIZINN.COM.png" style="height: 29px;">
+    <a href="https://faizinn.com/">
+      <img src="https://faizinn.com/images/FAIZINN.COM.png" style="height: 29px;">
+    </a>
   </div>
   <div class="nav-links">
     <div class="dropdown-menu">
       <a
-        href="#!"
+        href="javascript:;"
         class="dropdown-trigger"
         onclick="dropdownMenu('belajar_dropdown')"
         >Belajar</a
       >
       <div id="belajar_dropdown" class="dropdown-content">
-        <a class="dropdown-item" href="#home">Home</a>
-        <a class="dropdown-item" href="#about">About</a>
-        <a class="dropdown-item" href="#contact">More ➜</a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ javascript"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/javascript.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          javascript
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ codeigniter"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/codeigniter.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          codeigniter
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ flutter"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/flutter.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          flutter
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ html"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/html.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          html
+        </a>
+        
+        <a
+          href="https://faizinn.com/ belajar/ mysql"
+          class="dropdown-item"
+          style="text-transform: capitalize;"
+        >
+          <img src="https://faizinn.com/images/mysql.png"
+          style="width:1rem; vertical-align: middle; margin-right: 0.3rem;"/>
+          mysql
+        </a>
+        
+        <a
+          href="https://faizinn.com/belajar"
+          class="dropdown-item"
+          style="margin-top: 5px;"
+          >More ➜</a
+        >
       </div>
     </div>
-    <a href="//github.io/jo_geek" target="_blank">Info</a>
-    <a href="//github.io/jo_geek" target="_blank">Random Post</a>
+    <a href="#!">Info</a>
+    <a href="#!">Random Post</a>
   </div>
 </div>
 
 <style>
-  .single-section .content img {
+  .single-section {
+    margin-top: 3rem;
+    min-height: 50vh;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #d6cece;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .single-section > .header {
+    padding: 2rem 2rem 0;
+  }
+
+  .single-section > .header > .info {
+    margin-bottom: 0.7rem;
+  }
+
+  .single-section > .header > .info > .user {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .single-section > .header > .info > .time {
+    font-size: 13px;
+    color: #8e8e8e;
+    font-weight: bold;
+  }
+
+  .single-section > .header > .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #031e39;
+  }
+
+  .single-section .divider {
+    border-bottom: 1px solid #ddd;
+    margin: 1.2rem 0;
+  }
+
+  .my-tags {
+    background: #f5f5f5;
+    padding: 0.5rem 0.6rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .single-section > .content img {
     width: 100%;
     border-radius: 15px;
     box-shadow: 5px 5px 20px 0px #afafaf;
   }
+
+  .single-section > .content {
+    padding: 0.5rem 2rem;
+  }
 </style>
 <div class="main">
   <div class="content">
-    <div
-      class="single-section"
-      style="
-        margin-top: 3rem;
-        min-height: 50vh;
-        width: 50%;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px 1px #d6cece;
-        display: flex;
-        flex-direction: column;
-      "
-    >
-      <div class="header" style="padding: 3rem 3rem 2rem;">
-        <div class="info" style="margin-bottom: 0.7rem;">
-          <a
-            class="user"
-            href="#!"
-            style="text-decoration: none; color: black; font-weight: bold;"
-            >Faizin Kholiq</a
-          >
-          •
-          <span
+    <div class="single-section">
+      <div class="header">
+        <div class="info">
+          <a class="user" href="#!">Faizin Kholiq</a>&nbsp;•&nbsp;<span
             class="time"
-            style="
-            font-size: 13px;
-            color: #8e8e8e;
-            font-weight: bold;
-            "
             >21 Nov 2020</span
           >
         </div>
-        <div
-          class="title"
-          style="
-          font-size: 2rem;
-          font-weight: bold;
-          color: #031e39;
-          "
-        >
+        <div class="title">
           Ngoding Awalan
         </div>
-        <div
-          class="divider"
-          style="border-bottom: 1px solid #ddd; margin: 1.2rem 0;"
-        ></div>
+        <div class="divider"></div>
         <div class="list-tags">
-          <span
-            style="
-            background: #f5f5f5;
-            padding: 0.5rem 0.6rem;
-            font-weight: bold;
-            border-radius: 0.5rem;
-            font-size: 0.8rem;
-            "
-            >#JavaScript</span
-          >
-          <span
-            style="
-            background: #f5f5f5;
-            padding: 0.5rem 0.6rem;
-            font-weight: bold;
-            border-radius: 0.5rem;
-            font-size: 0.8rem;
-          "
-            >#Framework</span
-          >
+          
+          <span class="my-tags">#codeigniter</span>
+          
+          <span class="my-tags">#flutter</span>
+          
+          <span class="my-tags">#html</span>
+          
+          <span class="my-tags">#javascript</span>
+          
+          <span class="my-tags">#mysql</span>
+          
+          <span class="my-tags">#php</span>
+          
+          <span class="my-tags">#vue</span>
+          
         </div>
       </div>
-      <div class="content" style="padding: 0.5rem 3rem;">
+      <div class="content">
         
       </div>
     </div>

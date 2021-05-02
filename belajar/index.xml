@@ -11,32 +11,5 @@
 	<atom:link href="https://faizinn.com/belajar/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Second</title>
-      <link>https://faizinn.com/belajar/javascript/second/</link>
-      <pubDate>Mon, 08 Feb 2021 00:42:13 +0700</pubDate>
-      
-      <guid>https://faizinn.com/belajar/javascript/second/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Belajar PHP untuk Pemula</title>
-      <link>https://faizinn.com/belajar/php/kenalan/</link>
-      <pubDate>Mon, 24 Aug 2020 18:04:02 +0700</pubDate>
-      
-      <guid>https://faizinn.com/belajar/php/kenalan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://faizinn.com/belajar/javascript/first/</link>
-      <pubDate>Mon, 24 Aug 2020 18:04:02 +0700</pubDate>
-      
-      <guid>https://faizinn.com/belajar/javascript/first/</guid>
-      <description>yoi</description>
-    </item>
-    
   </channel>
 </rss>
