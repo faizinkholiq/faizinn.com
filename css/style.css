@@ -126,7 +126,7 @@ body {
   border-radius: 5px;
   margin-top: 1rem;
   font-size: 15px;
-  padding-bottom: 8px;
+  padding: 5px 5px 8px;
 }
 
 .dropdown-menu .dropdown-content a.dropdown-item {
@@ -466,33 +466,63 @@ input:checked + .toggle .star--6 {
 }
 
 .list-tag .tag {
-  margin-right: 1px;
+  margin: 8px 1px 0 0;
   font-size: 13px;
   border-radius: 5px;
   padding: 3px 8px;
+  display: inline-flex;
 }
 
 .tag.javascript {
   background: #e8d44d;
   color: #30302e;
+  border: 2px solid #e8d44d;
 }
 
 .tag.vue {
   background: #41b783;
   color: #34495e;
+  border: 2px solid #41b783;
 }
 
 .tag.react {
   background: #20232a;
   color: #62dafc;
+  border: 2px solid #20232a;
 }
 
 .tag.angular {
   background: #be002e;
   color: #fff;
+  border: 2px solid #be002e;
 }
 
 .tag.php {
   background: #4e5a8c;
   color: #fff;
+  border: 2px solid #4e5a8c;
+}
+
+.tag.codeigniter {
+  background: #fff;
+  color: #ed4322;
+  border: 2px solid #ed4322;
+}
+
+.tag.html {
+  background: #e54c22;
+  color: #fff;
+  border: 2px solid #e54c22;
+}
+
+.tag.flutter {
+  background: #00b5f8;
+  color: #fff;
+  border: 2px solid #00b5f8;
+}
+
+.tag.mysql {
+  background: #fff;
+  color: #065e85;
+  border: 2px solid #e4ad52;
 }
