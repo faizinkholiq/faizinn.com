@@ -79,11 +79,27 @@ body {
   align-items: center;
 }
 
+.main .banner > .content {
+  z-index: 1;
+}
+
+.main .banner > .wavy-img {
+  position: absolute;
+  height: 100%;
+  width: 28rem;
+  top: 0;
+  right: 0;
+}
+
 .main > .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   flex: 1;
+  width: 73rem;
+  margin: 0 auto;
 }
 
 /* FOOTER */
@@ -163,12 +179,16 @@ body {
 }
 
 /* ARTICLE */
+div.article-section > .header {
+  padding: 0 3.5rem 2rem;
+}
+
 div.list-article {
   display: flex;
   flex-wrap: wrap;
-  width: 65rem;
   margin: 0 auto;
   height: auto;
+  justify-content: center;
 }
 div.list-article div.card-article {
   width: 29%;
@@ -177,7 +197,7 @@ div.list-article div.card-article {
   box-shadow: 2px 3px 7px 1px #aaaaaa;
   display: flex;
   flex-direction: column;
-  margin: 1% 0 1% 2.5%;
+  margin: 1% 1.2%;
   border-radius: 5px;
   text-align: center;
   transition: box-shadow 0.2s; /* Animation */
@@ -188,7 +208,7 @@ div.list-article div.card-article:hover {
   cursor: pointer;
 }
 div.card-article .image-article {
-  height: 9rem;
+  height: 10rem;
 }
 div.card-article .image-article img {
   height: 100%;
