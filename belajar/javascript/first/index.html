@@ -24,7 +24,69 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/css/style-mobile.css" />
 <link rel="stylesheet" type="text/css" href="/icons/css/all.css">
-<body><div class="toggleWrapper" title="Dark Mode">
+<body><style>
+.navbar .top-menu-wrapper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: background 0.5s;
+}
+
+.navbar .top-menu {
+  position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navbar .top-menu {
+  display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow-y: auto;
+    padding: 1.5rem 1.5rem;
+    background: #ffffff;
+}
+
+.navbar .top-menu-wrapper.show-offcanvas::before {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.navbar .top-menu-wrapper.show-offcanvas .panel,
+.navbar .top-menu-wrapper.show-offcanvas .top-menu {
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.7s;
+}
+
+.navbar .top-menu-wrapper.show-offcanvas .top-menu {
+  transition-delay: 0.2s;
+}
+
+.navbar .top-menu .mob-block {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.navbar .top-menu .close-mobile-menu{
+    font-size: 1.5rem;
+    color: #15314c;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+</style>
+
+<div class="toggleWrapper" title="Dark Mode">
   <input type="checkbox" class="dn" id="dn" />
   <label for="dn" class="toggle">
     <span class="toggle__handler">
@@ -42,6 +104,9 @@
 </div>
 
 <div class="navbar">
+  <button aria-label="Open Mobile Menu" class="open-mobile-menu nav-menu">
+    <i class="fa fa-bars nav-menu"  aria-hidden="true"></i>
+  </button>
   <div class="nav-header">
     
     <a href="https://faizinn.com/">
@@ -119,8 +184,41 @@
     <a href="#!">Info</a>
     <a href="#!">Random Post</a>
   </div>
+
+  <div class="top-menu-wrapper">
+      <ul class="top-menu">
+        <li class="mob-block">
+          <button aria-label="Close Mobile Menu" class="close-mobile-menu">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li><a href="#">Menu Link 1</a></li>
+        <li><a href="#">Menu Link 2</a></li>
+        <li><a href="#">Menu Link 3</a></li>
+        <li><a href="#">Menu Link 4</a></li>
+        <li><a href="#">Menu Link 5</a></li>
+        <li><a href="#">Menu Link 6</a></li>
+        <li><a href="#">Menu Link 7</a></li>
+      </ul>
+    </div>
 </div>
 
+  <script>
+const openMobMenu = document.querySelector(".open-mobile-menu");
+const closeMobMenu = document.querySelector(".close-mobile-menu");
+const topMenuWrapper = document.querySelector(".top-menu-wrapper");
+const showOffCanvas = "show-offcanvas";
+
+
+openMobMenu.addEventListener("click", () => {
+  topMenuWrapper.classList.add(showOffCanvas);
+});
+
+
+closeMobMenu.addEventListener("click", () => {
+  topMenuWrapper.classList.remove(showOffCanvas);
+});
+  </script>
 <style>
   .single-section {
     margin-top: 3rem;
