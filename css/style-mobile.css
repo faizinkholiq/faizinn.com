@@ -29,6 +29,7 @@
     bottom: 0;
     z-index: -1;
     transition: background 0.5s;
+    display: none;
   }
 
   .navbar .top-menu {
@@ -53,6 +54,7 @@
   .navbar .top-menu-wrapper.show-offcanvas::before {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    display: block;
   }
 
   .navbar .top-menu-wrapper.show-offcanvas .panel,
@@ -68,7 +70,8 @@
   .navbar .top-menu .mob-block {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 2rem;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar .top-menu .close-mobile-menu {
@@ -86,6 +89,31 @@
     border: none;
     outline: none;
     display: block;
+  }
+
+  .navbar ul.top-menu {
+    list-style: none;
+  }
+
+  .navbar ul.top-menu > li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .navbar ul.top-menu > li > a {
+    text-decoration: none;
+    color: #15314c;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navbar ul.top-menu > li > a > i {
+    margin-right: 1rem;
+  }
+
+  .navbar ul.top-menu > li > a:hover {
+    color: #47c4fa;
   }
 
   .main > .content {
