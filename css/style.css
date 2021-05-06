@@ -249,7 +249,7 @@ div.list-category div.card-category {
   width: 23%;
   height: 200px;
   display: inline-block;
-  margin: 1% 0 1% 2%;
+  margin: 1%;
   text-align: center;
   transition: transform 0.2s; /* Animation */
 }
@@ -259,8 +259,16 @@ div.list-category div.card-category:hover {
   cursor: pointer;
 }
 
-div.card-category .image-category img {
+div.card-category .image-category {
   height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.card-category .image-category img {
+  width: 70px;
 }
 div.card-category .title-category {
   font-weight: bold;
@@ -556,4 +564,65 @@ input:checked + .toggle .star--6 {
   background: #fff;
   color: #065e85;
   border: 2px solid #e4ad52;
+}
+
+/* SINGLE SECTIONS */
+.main .single-section {
+  margin-top: 3rem;
+  min-height: 50vh;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px #d6cece;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.main .single-section > .header {
+  padding: 2rem 2rem 0;
+}
+
+.main .single-section > .header > .info {
+  margin-bottom: 0.7rem;
+}
+
+.main .single-section > .header > .info > .user {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.main .single-section > .header > .info > .time {
+  font-size: 13px;
+  color: #8e8e8e;
+  font-weight: bold;
+}
+
+.main .single-section > .header > .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #031e39;
+}
+
+.main .single-section .divider {
+  border-bottom: 1px solid #ddd;
+  margin: 1.2rem 0;
+}
+
+.my-tags {
+  background: #f5f5f5;
+  padding: 0.5rem 0.6rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.main .single-section > .content img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 0px #afafaf;
+}
+
+.main .single-section > .content {
+  padding: 0.5rem 2rem;
 }

@@ -96,7 +96,7 @@
   }
 
   .navbar ul.top-menu > li {
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     font-size: 1.2rem;
     width: 100%;
   }
@@ -106,10 +106,11 @@
     color: #15314c;
     width: 100%;
     padding: 1rem;
+    display: block;
   }
 
   .navbar ul.top-menu > li > a > i {
-    margin-right: 1rem;
+    width: 2rem;
   }
 
   .navbar ul.top-menu > li > a:hover {
@@ -118,6 +119,8 @@
 
   .main > .content {
     width: 100%;
+    flex: 0;
+    padding-top: 2rem;
   }
 
   div.list-article div.card-article {
@@ -159,5 +162,26 @@
     top: 0;
     right: 0;
     background-size: cover !important;
+  }
+
+  .main .single-section {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .main .single-section > .header {
+    padding: 1.2rem 1.2rem 0;
+  }
+
+  .main .single-section > .content {
+    padding: 0.5rem 1.2rem;
+  }
+
+  div.list-category {
+    width: 80%;
+  }
+
+  div.list-category div.card-category {
+    width: 48%;
   }
 }

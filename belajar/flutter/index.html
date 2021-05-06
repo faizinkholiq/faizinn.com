@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-<title>Flutter</title>
+<title>faizinn.com — Belajar Sama2</title>
 <meta name="title" content="Flutter" />
 <meta name="description" content="Tempat belajar &amp; sharing ilmu. semoga suka :)" />
 
@@ -52,8 +52,8 @@
     </a>
   </div>
   <div class="nav-links">
+    <a href="https://faizinn.com/">Home</a>
     <div class="dropdown-menu">
-      <a href="https://faizinn.com/">Home</a>
       <a
         href="javascript:;"
         class="dropdown-trigger"
@@ -156,7 +156,7 @@ closeMobMenu.addEventListener("click", () => {
 });
   </script>
 <style>
-  .double-section {
+  .main .double-section {
     margin-top: 3rem;
     min-height: 50vh;
     width: 65%;
@@ -165,7 +165,7 @@ closeMobMenu.addEventListener("click", () => {
     padding-bottom: 2rem;
   }
 
-  .double-section > .main {
+  .main .double-section > .main {
     flex: 1;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px #d6cece;
@@ -173,12 +173,60 @@ closeMobMenu.addEventListener("click", () => {
     padding: 1rem 2rem;
   }
 
-  .double-section > .side {
+  .main .double-section > .main h1 {
+    margin: 0.5rem 0;
+  }
+
+  .main .double-section > .main p {
+    margin: 1rem 0;
+  }
+
+  .main .double-section > .side {
     width: 30%;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px #d6cece;
     height: fit-content;
   }
+
+  ol.my-ol-list {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  ol.my-ol-list li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+  ol.my-ol-list li::before{
+    content: counter(my-awesome-counter);
+    font-weight: bold;
+    background: #76b1e3;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 2px 1px 1px;
+    margin-right: 10px;
+  } 
+
+  ol.my-ol-list li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
 </style>
 <div class="main">
   <div class="content">
@@ -186,10 +234,10 @@ closeMobMenu.addEventListener("click", () => {
       <div class="main">
         <h1>Belajar Flutter</h1>
         <p>dibawah ini beberapa post tentang Flutter, Semoga suka :)</p>
-        <ul class="list-article">
+        <ol class="my-ol-list">
           
           
-        </ul>
+        </ol>
       </div>
       <div class="side">
         
