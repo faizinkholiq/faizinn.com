@@ -158,14 +158,13 @@ closeMobMenu.addEventListener("click", () => {
 <style>
   .main .double-section {
     margin-top: 3rem;
-    min-height: 50vh;
     width: 65%;
     display: flex;
     flex-direction: row;
     padding-bottom: 2rem;
   }
 
-  .main .double-section > .main {
+  .main .double-section>.main {
     flex: 1;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px #d6cece;
@@ -173,15 +172,15 @@ closeMobMenu.addEventListener("click", () => {
     padding: 1rem 2rem;
   }
 
-  .main .double-section > .main h1 {
+  .main .double-section>.main h1 {
     margin: 0.5rem 0;
   }
 
-  .main .double-section > .main p {
+  .main .double-section>.main p {
     margin: 1rem 0;
   }
 
-  .main .double-section > .side {
+  .main .double-section>.side {
     width: 30%;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px #d6cece;
@@ -201,12 +200,12 @@ closeMobMenu.addEventListener("click", () => {
     display: flex;
     width: 50%;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-}
+  }
 
-  ol.my-ol-list li::before{
+  ol.my-ol-list li::before {
     content: counter(my-awesome-counter);
     font-weight: bold;
     background: #76b1e3;
@@ -220,13 +219,82 @@ closeMobMenu.addEventListener("click", () => {
     align-items: center;
     padding: 1px 2px 1px 1px;
     margin-right: 10px;
-  } 
+  }
 
   ol.my-ol-list li a {
     font-weight: bold;
     text-decoration: none;
     color: #000;
-}
+    transition: all 0.3s;
+  }
+
+  ol.my-ol-list li a:hover {
+    color: #75b1e3;
+  }
+
+  .side-list {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 1rem 0.5rem;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+  }
+
+  .side-list > .ico-list{
+    width: 20%; text-align: center;
+  }
+
+  .side-list > .ico-list > img{
+      width: 1.5rem;
+    }
+
+  .side-list > .title-list{
+    flex: 1; text-transform: capitalize;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .main .double-section {
+      margin-top: 0;
+    }
+
+    .main .double-section {
+      width: 90%;
+    }
+
+    .main .double-section>.side {
+      width: 20%;
+    }
+
+    .main .double-section>.main {
+      margin-right: 1.2rem;
+      padding: 1rem;
+    }
+
+    .main .double-section>.main h1 {
+      font-size: 1.5rem;
+    }
+
+    .side-list{
+      padding: 1rem;
+    }
+
+    .side-list > .ico-list{
+      width: 100%;
+    }
+
+    .side-list > .ico-list > img{
+      width: 2rem;
+    }
+
+    .side-list > .title-list, .side-list > i{
+      display: none;
+    }
+
+    ol.my-ol-list li {
+      width: 100%;
+    }
+  }
 </style>
 <div class="main">
   <div class="content">
@@ -241,71 +309,51 @@ closeMobMenu.addEventListener("click", () => {
       </div>
       <div class="side">
         
-        <div
-          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
-          onclick="goTo('https:\/\/faizinn.com\/belajar/html')"
-        >
-          <div style="width: 20%; text-align: center;">
-            <img src="https://faizinn.com/images/html.png"
-            style="width:1.5rem;"/>
+        <div class="side-list" onclick="goTo('https:\/\/faizinn.com\/belajar/html')">
+          <div class="ico-list">
+            <img src="https://faizinn.com/images/html.png" />
           </div>
-          <div style="flex: 1; text-transform: capitalize;">
+          <div class="title-list">
             html
           </div>
           <i class="fa fa-chevron-right" style="color:#aaa;"></i>
         </div>
         
-        <div
-          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
-          onclick="goTo('https:\/\/faizinn.com\/belajar/javascript')"
-        >
-          <div style="width: 20%; text-align: center;">
-            <img src="https://faizinn.com/images/javascript.png"
-            style="width:1.5rem;"/>
+        <div class="side-list" onclick="goTo('https:\/\/faizinn.com\/belajar/javascript')">
+          <div class="ico-list">
+            <img src="https://faizinn.com/images/javascript.png" />
           </div>
-          <div style="flex: 1; text-transform: capitalize;">
+          <div class="title-list">
             javascript
           </div>
           <i class="fa fa-chevron-right" style="color:#aaa;"></i>
         </div>
         
-        <div
-          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
-          onclick="goTo('https:\/\/faizinn.com\/belajar/mysql')"
-        >
-          <div style="width: 20%; text-align: center;">
-            <img src="https://faizinn.com/images/mysql.png"
-            style="width:1.5rem;"/>
+        <div class="side-list" onclick="goTo('https:\/\/faizinn.com\/belajar/mysql')">
+          <div class="ico-list">
+            <img src="https://faizinn.com/images/mysql.png" />
           </div>
-          <div style="flex: 1; text-transform: capitalize;">
+          <div class="title-list">
             mysql
           </div>
           <i class="fa fa-chevron-right" style="color:#aaa;"></i>
         </div>
         
-        <div
-          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
-          onclick="goTo('https:\/\/faizinn.com\/belajar/php')"
-        >
-          <div style="width: 20%; text-align: center;">
-            <img src="https://faizinn.com/images/php.png"
-            style="width:1.5rem;"/>
+        <div class="side-list" onclick="goTo('https:\/\/faizinn.com\/belajar/php')">
+          <div class="ico-list">
+            <img src="https://faizinn.com/images/php.png" />
           </div>
-          <div style="flex: 1; text-transform: capitalize;">
+          <div class="title-list">
             php
           </div>
           <i class="fa fa-chevron-right" style="color:#aaa;"></i>
         </div>
         
-        <div
-          style="display:flex; flex-direction: row; padding: 1rem 1rem 1rem 0.5rem; align-items: center; border-bottom: 2px solid #eee; cursor: pointer;"
-          onclick="goTo('https:\/\/faizinn.com\/belajar/vue')"
-        >
-          <div style="width: 20%; text-align: center;">
-            <img src="https://faizinn.com/images/vue.png"
-            style="width:1.5rem;"/>
+        <div class="side-list" onclick="goTo('https:\/\/faizinn.com\/belajar/vue')">
+          <div class="ico-list">
+            <img src="https://faizinn.com/images/vue.png" />
           </div>
-          <div style="flex: 1; text-transform: capitalize;">
+          <div class="title-list">
             vue
           </div>
           <i class="fa fa-chevron-right" style="color:#aaa;"></i>
